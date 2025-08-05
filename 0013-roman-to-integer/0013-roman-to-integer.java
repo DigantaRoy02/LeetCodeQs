@@ -9,9 +9,9 @@ class Solution {
         m.put('D',500);
         m.put('M',1000);
         int sum = 0;
-        // int char[] = s.toCharArray();
+        // char[] chars = s.toCharArray();
         for(int i=0,j=1;j<s.length();i++,j++){
-            if((m.get(s.charAt(i))>=m.get(s.charAt(j)))){
+            if(m.get(s.charAt(i))>=m.get(s.charAt(j))){
                     sum = sum + m.get(s.charAt(i));
             }else{
                 sum = sum - m.get(s.charAt(i));
